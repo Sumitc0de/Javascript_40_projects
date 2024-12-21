@@ -23,7 +23,7 @@ function resetForNewRound() {
     currentNumber = generateRandomNumber();
     inputBox.value = "";
     updateDisplay();
-    displayText.innerHTML = "A new number has been chosen! Start guessing!";
+   displayText.innerHTML = "<span>Congratulations!</span> You guessed the correct number! A new number will be chosen.";
 }
 
 // Function to update score and chances display
@@ -46,7 +46,6 @@ function playerGuessNum() {
     }
 
     if (playerGuess === currentNumber) {
-        displayText.innerHTML = "<span>Congratulations!</span> You guessed the correct number! A new number will be chosen.";
         score += (chances * 10); // Increase score based on remaining chances
         resetForNewRound(); // Start a new round
     } else if (playerGuess > currentNumber) {
