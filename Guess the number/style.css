@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body {
+    background-color: aliceblue;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.main-container {
+    width: 40%;
+    height: 60%;
+    padding: 1.5vw;
+    background-color: antiquewhite;
+    border-radius: 6px;
+}
+
+.info-box {
+    width: 100%;
+    height: 5vw;
+    background-color: #FFE382;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.Gameinfo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.6rem;
+    font-weight: 550;
+}
+
+
+.main-box {
+    width: 100%;
+    height: calc(100% - 5vw);
+    background-color: #FEECE2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.inputbox {
+    width: 50%;
+    height: 50px;
+    outline: 0;
+    border-radius: 4px;    
+    position: relative;
+    cursor: text;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0 16px;
+    height: 48px;
+    background-color: #fff;
+    border: 1px solid #d6d6e7;
+    color: rgb(35, 38, 59);
+    box-shadow: inset 0 1px 6px 0 rgb(119 122 175 / 30%);
+    overflow: hidden;
+    transition: all 100ms ease-in-out;
+    :focus {
+        border-color: #3c4fe0;
+        box-shadow: 0 1px 0 0 rgb(35 38 59 / 5%);
+    }
+
+}
+
+#reqtext{
+    text-align: center;
+}
+
+#reqtext span{
+    font-weight: 600;
+    font-size:1.2rem;
+}
+
+
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.button-box {
+    width: 60%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btns {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    outline: 0;
+    font-weight: 500;
+}
+
+
+
+#guessbtn ,
+#retrybtn{
+      background-color: #c2fbd7;
+      border-radius: 100px;
+      box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+      color: green;
+      cursor: pointer;
+      display: inline-block;
+      font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+      padding: 7px 20px;
+      text-align: center;
+      text-decoration: none;
+      transition: all 250ms;
+      border: 0;
+      font-size: 20px;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+    
+    #guessbtn:hover ,
+    #retrybtn:hover{
+      box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+      transform: scale(1.1) rotate(-1deg);
+    }
+
+    #retrybtn{
+        background-color: #FF8A8A;
+        color: #FF4545;
+        box-shadow: rgba(187, 44, 44, 0.2) 0 -25px 18px -14px inset,rgba(187, 87, 44, 0.15) 0 1px 2px,rgba(187, 82, 44, 0.15) 0 2px 4px,rgba(187, 96, 44, 0.15) 0 4px 8px,rgba(187, 113, 44, 0.15) 0 8px 16px,rgba(187, 75, 44, 0.15) 0 16px 32px;
+    }
+
+    #retrybtn:hover{
+        box-shadow: rgba(187, 82, 44, 0.35) 0 -25px 18px -14px inset,rgba(187, 87, 44, 0.25) 0 1px 2px,rgba(187, 53, 44, 0.25) 0 2px 4px,rgba(187, 49, 44, 0.25) 0 4px 8px,rgba(187, 58, 44, 0.25) 0 8px 16px,rgba(187, 44, 44, 0.25) 0 16px 32px;
+        transform: scale(1.1) rotate(1deg);
+      }
+
+
+@media screen and (max-width:425px){
+
+    body{
+        justify-content: flex-start;
+        padding: 50px 0;
+    }
+    h1{
+        font-size:7vw;
+        text-align: center;
+        width: 85%;
+    }
+
+    .main-container{
+        width: 80%;
+      height: 80%;
+      padding: 20px;
+    }
+
+    .info-box{
+        height: 50px;
+        padding: 10px;
+    }
+
+    .Gameinfo{
+        font-size: 5vw;
+    }
+
+    .inputbox{
+        width: 90%;
+        font-size: 1.05rem;
+        padding: 10px;
+    }
+
+    .main-box{
+        height: calc(100% - 50px);
+    }
+
+    .button-box{
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .btns{
+        width: 40vw;
+    }
+
+    #reqtext{
+        width: 85%;
+        text-align: center;
+    }
+}   
